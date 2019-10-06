@@ -49,8 +49,8 @@ var nihlinkgenerate = function(arr, config){
         if(a.hostname.length && arr.indexOf(a.hostname.toLowerCase()) === -1){
             var data= {};
             data.url = a.href;
-            data.countdown = config.countdown;
-            a.href = config.url + '/' + config.page + '?u=' + encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), config.keyit));
+            data.countdown = true;
+            a.href = 'https://safe.eduhighschool.tech' + '/p/lanjut.html' + '?u=' + encodeURIComponent(CryptoJS.AES.encrypt(JSON.stringify(data), 'YusepJaelani'));
         }
     });
     console.log('NihLink Auto Generate');
