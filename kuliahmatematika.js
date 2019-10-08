@@ -129,9 +129,8 @@ function auto_safeconvert() {
             }
             j++;
         }
-        if (a_to_vh == false) {
-            var encryptedUrl = Base64.encode(a_to_vi);
-            a_to_ve[i].href = "https://kuliahmatematika.my.id/bucin/?url=" + encryptedUrl;
+        if (a_to_vh == false) 
+            a_to_ve[i].href = "https://kuliahmatematika.my.id/bucin/?url=" + btoa(href);
             a_to_ve[i].rel = "nofollow";
             a_to_vb++;
             a_to_vc += i + ":::" + a_to_ve[i].href + "\n";
